@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(images/grocery-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgb(145, 145, 145);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.container .box{
+    width: 350px;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.774);
+    color: white;
+    border-radius: 30px;
+    transition-duration: .4s;
+    animation: loginbox 1s ease-in-out;
+}
+@keyframes loginbox{
+    0%{
+        transform: translateY(-100vh);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+.box:hover{
+    background-color: rgba(14, 14, 14, 0.932);
+}
+.box .inputs{
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+.box h2{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.container .box .input{
+    border-radius: 20px;
+    height: 45px;
+    width: 70%;
+    padding: 10px;
+    background-color: rgb(94, 93, 93);
+    color: white;
+    border: none;
+
+}
+.container .box .input::placeholder{
+    color: white;
+    font-family: cursive;
+    opacity: 50%;
+}
+.box .input:hover{
+    border: 1px solid black;
+}
+.box .login .btn{
+    width: 60px;
+    height: 30px;
+    background-color: rgb(0, 128, 21);
+    color: white;
+    border-radius: 20px;
+    border: none;
+    transition-duration: .5s;
+    cursor: pointer;
+}
+.box .login{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+.box .login .btn:hover{
+    background-color: rgb(0, 100, 5);
+    transform: scale(1.1);
+    width: 80px;
+}
+.box .reg a{
+    color: gray;
+}
+.box .reg{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}

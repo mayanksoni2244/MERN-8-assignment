@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg,
+            #9fafdd 0%,
+            #979650 35%,
+            #d1b30b 100%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 110vh;
+    color: white;
+}
+
+ .form h1 {
+    text-align: center;
+    margin-top: 20px;
+    letter-spacing: 2px;
+    color: rgb(252, 255, 88);
+}
+
+ .form form {
+    margin-top: 20px;
+
+}
+
+ .form form legend {
+    text-align: center;
+    font-size: 25px;
+}
+ .form form fieldset{
+    border-radius: 20px;
+    /* background: linear-gradient(135deg,
+    #131313 0%,
+    #686868 35%,
+    #7e7e7e 100%
+); */
+    background-color: #313131;
+}
+ .form form .com {
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 26px;
+    width: 200px;
+}
+
+ .form form .g , .h {
+
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 26px;
+}
+
+ .form form .comm {
+    border-radius: 20px;
+    height: 34px;
+    text-align: center;
+    border: none;
+}
+.form form .comm:hover{
+    border: 2px solid;
+}
+ .form form #em {
+    margin-left: 25px;
+}
+ .form form #f2 #tm{
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+ .form form #f2 a{
+    color: rgb(0, 0, 0);
+}
+ .form form #f2 a:hover{
+    color: white;
+}
+ .form .sumbit{
+    border-radius: 20px;
+    padding: 10px;
+    background-color: rgb(179, 179, 179);
+    width: 150px;
+    text-align: center;
+    margin-top: 10px;
+    height: 50px;
+    transition-duration: .6s;
+}
+.form .btn{
+    display: flex;
+    justify-content: center;
+}
+ .form .sumbit:hover{
+    background-color: rgb(255, 0, 0);
+    transform: scale(1.1);
+    color: white;
+    border: none;
+    box-shadow: 0 4px 18px 0 rgb(179, 57, 57);
+}

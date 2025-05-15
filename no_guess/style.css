@@ -1,0 +1,56 @@
+body{
+    background-color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.container{
+    background-color: #7c7c7c;
+    height: 350px;
+    max-width: 26%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 14px;
+    border-radius: 10px;
+}
+.sumbit{
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    width: 100px;
+    height: 30px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: .3s;
+}
+.sumbit:hover{
+    background-color: white;
+    color: black;
+}
+.para{
+    margin-top: -10px;
+}
+#num{
+    border-radius: 10px;
+    border: none;
+    height: 20px;
+    text-align: center;
+    width: 50%;
+}
+main{
+    display: flex;
+    justify-content: center;
+    
+}
+.container2{
+    height: 100px;
+    width: 26%;
+    background-color: rgb(173, 173, 173);
+    margin-top: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+footer{
+    display: flex;
+    justify-content: center;
+}

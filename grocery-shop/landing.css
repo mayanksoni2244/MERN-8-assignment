@@ -1,0 +1,364 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+html{
+  scroll-behavior: smooth;
+}
+html, body {
+  height: 100%;
+}
+body {
+  background-image: url(images/grocery-bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+
+  background-repeat: no-repeat;
+  background-color: black;
+
+}
+body a{
+  text-decoration: none;
+}
+
+/* H E A D E R */
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.sea{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+} 
+h1 {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 15px;
+  font-size: 7vw;
+  height: 250px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  -webkit-text-stroke: 1.1px black;
+  font-weight: bolder;
+  animation: h1 1.5s ease-in-out ;
+}
+@keyframes h1 {
+  0%{
+    margin-left: -150vw;
+  }
+  100%{
+    margin-left: 0;
+  }
+}
+.nav ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: start;
+  margin-left: 0.8rem;
+}
+.nav ul li {
+  list-style: none;
+  color: white;
+  animation: navlist 1.5s ease-in-out;
+}
+@keyframes navlist {
+  0%{
+    opacity: 1%;
+  }
+  100%{
+    opacity: 100%;
+  }
+}
+.nav ul a:hover {
+  transform: scale(1.1);
+  background-color: rgb(78, 78, 78);
+  border-radius: 20px;
+}
+.nav .lgre{
+  height: 50px;
+  display: flex;
+  align-items: center;
+  color: white;
+  margin-right: 10px;
+  transition-duration: .5s;
+  animation: login 1.5s ease-in-out;
+}
+@keyframes login {
+  0%{
+    opacity: 1%;
+  }
+  100%{
+    opacity: 100%;
+  }
+  
+}
+.nav .lgre:hover{
+  background-color: rgb(78, 78, 78);
+  border-radius: 20px;
+}
+.nav a {
+  transition-duration: 0.5s;
+  height: 45px;
+  display: flex;
+  align-items: center;
+}
+.nav {
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#search {
+  border-radius: 30px;
+  border: none;
+  height: 35px;
+  padding: 3px;
+  width: 240px;
+  display: flex;
+  justify-content: center;
+  transition-duration: 0.4s;
+  text-align: center;
+  animation: searchbar 1.1s ease-in-out;
+}
+#search:hover {
+  border: 1px solid;
+  transform: scale(1.05);
+  width: 330px;
+  border: 1px solid black;
+}
+#search::placeholder {
+  text-align: center;
+}
+@keyframes searchbar {
+  0%{
+    margin-top: -120px;
+  }
+  50%{
+    margin-top: 70px;
+  }
+  100%{
+    margin-top: 5px;
+  }
+}
+
+
+                          /* C O N T E N T - 1  */
+
+.bigbox {
+  background-color: white;
+  height: 350px;
+  width: 100%;
+  display: grid;
+  grid-template-areas: "box1 box2 box3 box4";
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.bigbox .box {
+  border: 1px solid black;
+  border-radius: 0 0 40px 40px;
+  height: 260px;
+  width: 14vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition-duration: 0.5s;
+  background-color: rgb(224, 224, 224);
+  animation: boxy 1.5s ease-in-out;
+}
+@keyframes boxy {
+  0%{
+    margin-left: -1000px;
+  }
+  100%{
+    margin-right: 0;
+  }
+}
+.bigbox .box1 {
+  grid-area: "box1";
+}
+.bigbox .box2 {
+  grid-area: "box2";
+}
+.bigbox .box3 {
+  grid-area: "box3";
+}
+.bigbox .box4 {
+  grid-area: "box4";
+}
+.bigbox .box:hover {
+  transform: scale(1.07);
+  box-shadow: 0 4px 18px 0 black;
+}
+.bigbox .box img {
+  width: 95%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 0 0 40px 40px;
+  margin-top: 7px;
+}
+.bigbox .box p {
+  color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  font-weight: bolder;
+  margin-top: 10px;
+}
+
+                        /* C O N T E N T -2 */
+
+.nav2 {
+  color: white;
+  letter-spacing: 10px;
+  display: flex;
+  justify-content: center;
+}
+.bigbox .boxx {
+  border: 1px solid;
+  border-radius: 0 0 40px 40px;
+  height: 330px;
+  width: 14vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition-duration: 0.5s;
+  background-color: rgb(224, 224, 224);
+}
+.bigbox .boxx img {
+  width: 95%;
+  height: 150px;
+  object-fit: cover;
+  margin-top: 7px;
+}
+.bigbox .boxx:hover {
+  transform: scale(1.07);
+  box-shadow: 0 4px 18px 0 black;
+}
+.bigbox .boxx .details .cut {
+  text-decoration: line-through;
+}
+.bigbox .boxx .details {
+  text-align: center;
+}
+.bigbox .boxx .buy {
+  background-color: rgb(129, 129, 129);
+  color: rgb(0, 0, 0);
+  border-radius: 10px;
+  width: 70%;
+  height: 25px;
+  transition-duration: 0.5s;
+}
+.bigbox .boxx .buy:hover {
+  transform: scale(1.1);
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+
+                            /* C O N T E N T - 3  */
+
+.nav3 {
+  display: flex;
+  justify-content: center;
+  color: white;
+  letter-spacing: 10px;
+}
+
+                               /* C O N T E N T - 4  */
+
+
+.nav4 {
+  color: white;
+  display: flex;
+  justify-content: center;
+  letter-spacing: 10px;
+}
+
+
+                               /* F O O T E R  */
+
+
+
+.foot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  height: 200px;
+}
+.foot .comul ul {
+  list-style: none;
+  text-align: center;
+  gap: 20px;
+}
+.foot .comul {
+  color: white;
+}
+.foot .comul ul a {
+  opacity: 60%;
+  text-decoration: none;
+  color: white;
+}
+.foot .comul ul a:hover {
+  opacity: 100%;
+}
+.copy {
+  background-color: white;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+                     /* media query */
+@media (max-width: 848px) {
+  .bigbox{
+    grid-template-areas: "box1 box2" "box3 box4";
+    height: auto;
+  }
+  .bigbox .box {
+    margin:15px 0 15px 0;
+  }
+  .bigbox .boxx {
+    margin:15px 0 15px 0;
+    width: 35vw;
+  }
+  .bigb .box{
+    width: 35vw;
+  }
+  .fm{
+    display: grid;
+    grid-template-areas: "box1""box2" "box3";
+  }
+}
+@media (max-width:664px){
+  nav ul li{
+    font-size: 0.8rem;
+  }
+  .nav ul {
+    margin-left: 0.3em;
+    gap: 10px;
+  }
+  nav .lgre{
+    font-size: 0.8rem;
+  }
+
+}
+@media (max-width:468px){
+  .foot .comul ul {
+    font-size: 0.8rem;
+  }
+  .foot{
+    gap: 40px;
+  }
+}

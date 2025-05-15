@@ -1,0 +1,47 @@
+body{
+    background-color: #212121;
+}
+.container{
+    text-align: center;
+    color: white;
+    background-color: rgb(88, 88, 88);
+    width: 60%;
+    padding: 10px;
+    border-radius: 14px;
+    height: auto;
+}
+main{
+    display: flex;
+    justify-content: center;
+}
+#username{
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
+    border: none;
+    outline: none;
+}
+.card img{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+}
+.card{
+    display: flex;
+    text-align: start;
+    align-items: center;
+}
+button{
+    background-color: skyblue;
+    /* padding: 10px; */
+    border: none;
+    border-radius: 10px;
+    width: 80px;
+    height: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+button:hover{
+    box-shadow: 0px 2px 5px 1px rgb(70, 184, 230);
+}
