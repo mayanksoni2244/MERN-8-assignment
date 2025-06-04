@@ -1,0 +1,84 @@
+.container{
+    text-align: center;
+    box-shadow: 10px 10px 15px gray;
+    padding: 20px;
+    border-radius: 14px;
+    background-color: whitesmoke;
+}
+body{
+    background-color: rgb(226, 226, 226);
+}
+
+#task{
+    border-radius: 5px;
+    text-align: center;
+    height: 20px;
+}
+
+.btn{
+    background-color: lightgreen;
+    height: 25px;
+    width: 50px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.container-2{
+    background-color: rgb(206, 206, 206);
+    width: 400px;
+    max-height: 500px;
+    border-radius: 13px;
+    margin-top: 10px;
+    overflow-y: scroll;
+    
+}
+
+main{
+    display: flex;
+    justify-content: center;
+}
+
+ul li:hover{
+    background-color: white;
+    transform: scale(1.04);
+}
+
+ul li{
+    height: 35px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+ul li:hover .delete{
+    display: inline-block;
+}
+
+.delete{
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: 10px;
+    border-radius: 10px;
+    width: 30px;
+    display: none;
+}
+
+.del-all{
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    height: 23px;
+    width: 100px;
+}
+
+.delal{
+    margin-top: 10px;
+    display: none;
+    text-align: center;
+}

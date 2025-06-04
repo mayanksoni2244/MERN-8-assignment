@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: black;
+    overflow-x: hidden;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.h1{
+    color: white;
+}
+.ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+.ul a{
+    color: white;
+    text-decoration: none;
+}
+.ul a:hover{
+    color: rgb(177, 177, 177);
+    text-decoration: underline;
+}
+
+main{
+    color: white;
+    /* background: #9c8989; */
+    width: 50%;
+    padding: 20px;
+    margin-top: 100px;
+}
+.content{
+    margin-top: 10px;
+    color: gray;
+    font-size: 15px;
+}
+.btn{
+    padding: 10px;
+    color: white;
+    border: 1px solid gray;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.btn2{
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    border: none;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.robo{
+    position: absolute;
+    top: 0;
+    right: -25%;
+}
